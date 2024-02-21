@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Polinomio
+comment1.params=grado
+comment1.target=Polinomio(int)
+comment2.params=coef\ exp
+comment2.target=void\ agregaTermino(double,\ int)
+comment3.params=term\ index
+comment3.target=void\ agregaTermino1(Termino,\ int)
+comment4.params=term
+comment4.target=void\ agregaTermino(Termino)
+comment5.params=x
+comment5.target=double\ evalua(double)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
