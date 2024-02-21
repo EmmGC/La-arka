@@ -1,16 +1,17 @@
 import java.util.Vector;
-
+import java.util.Scanner;
 public class PuntosEcuacion<E> 
 {
-    private Vector<Punto<E>> puntos;
-    private Polinomio poli;
-    private double linf;
-    private double lsup;
-    private double inc;
+    private  Vector<Punto<E>> puntos;
+    private static Polinomio poli;
+    private static double linf;
+    private static double lsup;
+    private static double inc;
+    private static Termino term;
 
     public PuntosEcuacion(Polinomio poli, double linf, double lsup, double inc) 
     {
-        this.puntos = new Vector<>();
+        this.puntos = new Vector<Punto<E>>();
         this.poli = poli;
         this.linf = linf;
         this.lsup = lsup;
@@ -41,6 +42,23 @@ public class PuntosEcuacion<E>
     }
     public static void main(String[] args) 
     {
+        Scanner get = new Scanner(System.in);
+        int exp,index,x;
+        double coef;
+        System.out.print("Ingresa tu coeficiente:");
+        coef = get.nextDouble();
+        System.out.print("\nIngresa tu exponete:");
+        exp = get.nextInt();
+        poli.agregaTermino(term,coef,exp);
+        System.out.print("\nIngresa tu index:");
+        index = get.nextInt();
+        poli.agregaTermino1(term,index);
+        term.toString();
+        System.out.print("\n Evalua a:");
+        x = get.nextInt();
+        poli.evalua(x);
+        poli.toString();
         
+
     }
 }

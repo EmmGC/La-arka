@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=EquipoFutbol
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ EquipoFutbol\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ entrenador
+comment1.target=EquipoFutbol(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ EquipoFutbol\r\n
+comment2.params=equipo
+comment2.target=java.lang.String\ Get_equipo(java.lang.String)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment3.params=entrenador
+comment3.target=java.lang.String\ Get_entrenador(java.lang.String)
+comment4.params=entrenador
+comment4.target=void\ Set_entrenador(java.lang.String)
+comment5.params=num\ nombre\ posicion\ numero
+comment5.target=void\ Agregar_jugador(int,\ java.lang.String,\ java.lang.String,\ int)
+numComments=6
