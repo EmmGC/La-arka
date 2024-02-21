@@ -7,9 +7,9 @@ public class Polinomio {
         this.grado = grado;
         this.terminos = new Termino[grado + 1];
     }
-    public void agregaTermino(double coef, int exp) 
+    public void agregaTermino(Termino term,double coef,int exp) 
     {
-        Termino term = new Termino(coef, exp);
+        term = new Termino(coef, exp);
         this.agregaTermino(term);
     }
     public void agregaTermino1(Termino term, int index) 
