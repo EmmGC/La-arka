@@ -1,10 +1,11 @@
 package Ecuaciones;
-import java.util.ArrayList;
-public class PuntosEcuacion<E>
+import java.util.Vector;
+public class PuntosEcuacion
 {
     private Polinomio poli;
-    private ArrayList<Punto<E>> puntos;
-    private int limiteInferior, limiteSuperior, incremento;
+    private Vector<Punto<Double>> puntos;
+    private int limiteInferior, limiteSuperior;
+    private int incremento;
     
     public PuntosEcuacion(Polinomio poli, int limiteInferior, int limiteSuperior, int incremento) 
     {
@@ -12,19 +13,19 @@ public class PuntosEcuacion<E>
         this.limiteSuperior = limiteSuperior;
         this.incremento = incremento;
         this.poli = poli;
-        puntos = new ArrayList<>();
+        puntos = new Vector<>();
     }
-    public ArrayList<Punto<E>> getPuntosEcuacion() 
+    public Vector<Punto<Double>> getPuntosEcuacion() 
     {
         for (int x = limiteInferior; x <= limiteSuperior; x += incremento) 
         {
             double valory = poli.calcularValor(x);
-            puntos.add(new Punto<E>((E)new Integer(x),(E)new Double(valory)));
+            puntos.add(new Punto<Double>((double)x,valory));
         }
         return puntos;
     }
-    public Punto<E> getPunto(int num)
+    public Punto<Double> getPunto(int num)
     {
-        return new Punto<>((E) new Integer(num), (E) new Double(poli.calcularValor(num)));
+        return new Punto<Double>((double)num, poli.calcularValor(num));
     }
 }

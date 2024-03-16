@@ -26,8 +26,14 @@ public class Polinomio
         }
         return valorTotal;
     }
-    public String toString(int exponente)
+    public String toString()
     {
-        return "f(x) = " + terminos[exponente].toString();
+        String str="";
+        for (Termino termino : terminos)
+        {
+            if  (termino!=null)
+                str =  str + " " + termino.toString();
+        }
+        return new String(str).replace(" ", " + ");
     }
 }

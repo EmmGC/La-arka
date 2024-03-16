@@ -14,9 +14,8 @@ public class Termino
     {
         return coeficiente * Math.pow(x, exponente);
     }
-
     public String toString()
     {
-        return  "(" + coeficiente + ")x^" + exponente;
+        return coeficiente + "x^" + exponente;
     }
 }

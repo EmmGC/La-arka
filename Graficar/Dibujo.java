@@ -27,9 +27,13 @@ public class Dibujo extends Frame
             g.drawString("Hola, wait?",100, 100);
          */
         Graphics2D g2d = (Graphics2D) g;
-        Line2D.Float linea = new Line2D.Float(200,200,100,100);
-        g2d.draw(linea);
-        g2d.draw(new Line2D.Float(300,300,400,300));
+        //Line2D.Float linea = new Line2D.Float(200,200,100,100);
+        //g2d.draw(linea);
+        //g2d.draw(new Line2D.Float(300,300,400,300));
+        for(float i = 100; i<= 400; i=+5)
+        {
+            g2d.draw(new Line2D.Float(100,100,200+i,200));
+        }
         
 
     }
